@@ -18,3 +18,4 @@ C:\Users\RL2380\Source\Repos\kalkulator\Kalkulator\obj\Debug\Kalkulator.csproj.G
 C:\Users\RL2380\Source\Repos\kalkulator\Kalkulator\obj\Debug\Kalkulator.csproj.CoreCompileInputs.cache
 C:\Users\RL2380\Source\Repos\kalkulator\Kalkulator\obj\Debug\Kalkulator.exe
 C:\Users\RL2380\Source\Repos\kalkulator\Kalkulator\obj\Debug\Kalkulator.pdb
+C:\Users\RL2380\Source\Repos\kalkulator\Kalkulator\obj\Debug\Kalkulator.Form2.resources
