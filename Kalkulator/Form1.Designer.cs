@@ -47,7 +47,7 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.textBox_result = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelCurrentOperation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -68,6 +68,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "C";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -77,6 +78,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "*";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.operator_click);
             // 
             // button4
             // 
@@ -116,6 +118,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "CE";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -125,6 +128,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "/";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.operator_click);
             // 
             // button9
             // 
@@ -164,6 +168,7 @@
             this.button12.TabIndex = 11;
             this.button12.Text = ".";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.operator_click);
             // 
             // button13
             // 
@@ -183,6 +188,7 @@
             this.button14.TabIndex = 13;
             this.button14.Text = "=";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -192,6 +198,7 @@
             this.button15.TabIndex = 14;
             this.button15.Text = "-";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.operator_click);
             // 
             // button16
             // 
@@ -230,21 +237,22 @@
             this.textBox_result.Size = new System.Drawing.Size(339, 20);
             this.textBox_result.TabIndex = 18;
             // 
-            // label1
+            // labelCurrentOperation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "label1";
+            this.labelCurrentOperation.AutoSize = true;
+            this.labelCurrentOperation.Location = new System.Drawing.Point(36, 13);
+            this.labelCurrentOperation.Name = "labelCurrentOperation";
+            this.labelCurrentOperation.Size = new System.Drawing.Size(35, 13);
+            this.labelCurrentOperation.TabIndex = 19;
+            this.labelCurrentOperation.Text = "label1";
+            this.labelCurrentOperation.Click += new System.EventHandler(this.Label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 257);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelCurrentOperation);
             this.Controls.Add(this.textBox_result);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
@@ -294,7 +302,7 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TextBox textBox_result;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelCurrentOperation;
     }
 }
 
